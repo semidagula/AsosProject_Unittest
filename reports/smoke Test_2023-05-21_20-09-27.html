@@ -1,0 +1,574 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <title>Report</title>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.6/css/bootstrap.min.css" integrity="sha384-1q8mTJOASx8j1Au+a5WDVnPi2lkFfwwEAa8hDDdjZlpLegxhjVME1fgjWPGmkzs7" crossorigin="anonymous">
+</head>
+<body>
+    <div class="container">
+        <div class="row">
+            <div class="col-xs-12">
+                <h2 class="text-capitalize">Report</h2>
+                <p class='attribute'><strong>Start Time: </strong>2023-05-21 20:09:27</p>
+                <p class='attribute'><strong>Duration: </strong>339.28 s</p>
+                <p class='attribute'><strong>Summary: </strong>Total: 10, Pass: 4, Error: 6</p>
+            </div>
+        </div>
+        <div class="row">
+            <div class="col-xs-12 col-sm-10 col-md-10">
+                <table class='table table-hover table-responsive'>
+                    <thead>
+                        <tr>
+                            <th>unittest_proiectFinal.home_page_test.TestHomePage</th>
+                            <th>Status</th>
+                            <th></th>
+                        </tr>
+                    </thead>
+                    <tbody>
+                        <tr class='warning'>
+                            <td class="col-xs-10">test10_facebook_link</td>
+                            <td class="col-xs-1">
+                                <span class="label label-warning" style="display:block;width:40px;">Error</span>
+                            </td>
+                            <td class="col-xs-1">
+                                <button class="btn btn-default btn-xs">View</button>
+                            </td>
+                        </tr>
+                        <tr style="display:none;">
+                            <td class="col-xs-9" colspan="3"><p style="color:maroon;">ElementClickInterceptedException: Message: element click intercepted: Element <a class="Yq_iQg0" href="https://www.facebook.com/ASOS/" target="_blank" rel="noopener noreferrer" data-testid="social-link">...</a> is not clickable at point (729, 693). Other element would receive the click: <div class="ot-sdk-row">...</div>
+  (Session info: chrome=113.0.5672.127)
+Stacktrace:
+Backtrace:
+	GetHandleVerifier [0x01208893+48451]
+	(No symbol) [0x0119B8A1]
+	(No symbol) [0x010A5058]
+	(No symbol) [0x010D4BA4]
+	(No symbol) [0x010D36E8]
+	(No symbol) [0x010D1EEB]
+	(No symbol) [0x010D12FE]
+	(No symbol) [0x010C9AAC]
+	(No symbol) [0x010EA2BC]
+	(No symbol) [0x010C9586]
+	(No symbol) [0x010EA614]
+	(No symbol) [0x010FC482]
+	(No symbol) [0x010EA0B6]
+	(No symbol) [0x010C7E08]
+	(No symbol) [0x010C8F2D]
+	GetHandleVerifier [0x01468E3A+2540266]
+	GetHandleVerifier [0x014A8959+2801161]
+	GetHandleVerifier [0x014A295C+2776588]
+	GetHandleVerifier [0x01292280+612144]
+	(No symbol) [0x011A4F6C]
+	(No symbol) [0x011A11D8]
+	(No symbol) [0x011A12BB]
+	(No symbol) [0x01194857]
+	BaseThreadInitThunk [0x75EE00C9+25]
+	RtlGetAppContainerNamedObjectPath [0x77E67B4E+286]
+	RtlGetAppContainerNamedObjectPath [0x77E67B1E+238]
+</p><p style="color:maroon;">Traceback (most recent call last):
+  File "C:\Users\User\PycharmProjects\pythonProject3\pythonProjectAsos\unittest_proiectFinal\home_page_test.py", line 36, in test10_facebook_link
+    self.driver.find_element(*Locators.FACEBOOK_LINK).click()
+  File "C:\Users\User\PycharmProjects\pythonProject3\pythonProjectAsos\venv\Lib\site-packages\selenium\webdriver\remote\webelement.py", line 94, in click
+    self._execute(Command.CLICK_ELEMENT)
+  File "C:\Users\User\PycharmProjects\pythonProject3\pythonProjectAsos\venv\Lib\site-packages\selenium\webdriver\remote\webelement.py", line 403, in _execute
+    return self._parent.execute(command, params)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\User\PycharmProjects\pythonProject3\pythonProjectAsos\venv\Lib\site-packages\selenium\webdriver\remote\webdriver.py", line 440, in execute
+    self.error_handler.check_response(response)
+  File "C:\Users\User\PycharmProjects\pythonProject3\pythonProjectAsos\venv\Lib\site-packages\selenium\webdriver\remote\errorhandler.py", line 245, in check_response
+    raise exception_class(message, screen, stacktrace)
+selenium.common.exceptions.ElementClickInterceptedException: Message: element click intercepted: Element <a class="Yq_iQg0" href="https://www.facebook.com/ASOS/" target="_blank" rel="noopener noreferrer" data-testid="social-link">...</a> is not clickable at point (729, 693). Other element would receive the click: <div class="ot-sdk-row">...</div>
+  (Session info: chrome=113.0.5672.127)
+Stacktrace:
+Backtrace:
+	GetHandleVerifier [0x01208893+48451]
+	(No symbol) [0x0119B8A1]
+	(No symbol) [0x010A5058]
+	(No symbol) [0x010D4BA4]
+	(No symbol) [0x010D36E8]
+	(No symbol) [0x010D1EEB]
+	(No symbol) [0x010D12FE]
+	(No symbol) [0x010C9AAC]
+	(No symbol) [0x010EA2BC]
+	(No symbol) [0x010C9586]
+	(No symbol) [0x010EA614]
+	(No symbol) [0x010FC482]
+	(No symbol) [0x010EA0B6]
+	(No symbol) [0x010C7E08]
+	(No symbol) [0x010C8F2D]
+	GetHandleVerifier [0x01468E3A+2540266]
+	GetHandleVerifier [0x014A8959+2801161]
+	GetHandleVerifier [0x014A295C+2776588]
+	GetHandleVerifier [0x01292280+612144]
+	(No symbol) [0x011A4F6C]
+	(No symbol) [0x011A11D8]
+	(No symbol) [0x011A12BB]
+	(No symbol) [0x01194857]
+	BaseThreadInitThunk [0x75EE00C9+25]
+	RtlGetAppContainerNamedObjectPath [0x77E67B4E+286]
+	RtlGetAppContainerNamedObjectPath [0x77E67B1E+238]
+
+</p>
+                            </td>
+                        </tr>
+                        <tr class='success'>
+                            <td class="col-xs-10">test1_homepage_loads</td>
+                            <td class="col-xs-1">
+                                <span class="label label-success" style="display:block;width:40px;">Pass</span>
+                            </td>
+                            <td class="col-xs-1">
+                            </td>
+                        </tr>
+                        <tr class='success'>
+                            <td class="col-xs-10">test2_accept_cookies</td>
+                            <td class="col-xs-1">
+                                <span class="label label-success" style="display:block;width:40px;">Pass</span>
+                            </td>
+                            <td class="col-xs-1">
+                            </td>
+                        </tr>
+                        <tr>
+                            <td colspan="3">
+                                Total: 3, Pass: 2, Error: 1 -- Duration: 46.85 s
+                            </td>
+                        </tr>
+                    </tbody>
+                </table>
+            </div>
+        </div>
+        <div class="row">
+            <div class="col-xs-12 col-sm-10 col-md-10">
+                <table class='table table-hover table-responsive'>
+                    <thead>
+                        <tr>
+                            <th>unittest_proiectFinal.add_to_cart_test.TestAddToCart</th>
+                            <th>Status</th>
+                            <th></th>
+                        </tr>
+                    </thead>
+                    <tbody>
+                        <tr class='success'>
+                            <td class="col-xs-10">test7_add_to_cart</td>
+                            <td class="col-xs-1">
+                                <span class="label label-success" style="display:block;width:40px;">Pass</span>
+                            </td>
+                            <td class="col-xs-1">
+                            </td>
+                        </tr>
+                        <tr class='warning'>
+                            <td class="col-xs-10">test8_remove_from_cart</td>
+                            <td class="col-xs-1">
+                                <span class="label label-warning" style="display:block;width:40px;">Error</span>
+                            </td>
+                            <td class="col-xs-1">
+                                <button class="btn btn-default btn-xs">View</button>
+                            </td>
+                        </tr>
+                        <tr style="display:none;">
+                            <td class="col-xs-9" colspan="3"><p style="color:maroon;">NoSuchElementException: Message: no such element: Unable to locate element: {"method":"xpath","selector":"//*[@id="asos-web-bag-react"]/div[1]/div[2]/div[1]/div[1]/div[3]/ul/li/bag-item-list/ul/li/div/div/div/bag-remove/div/button"}
+  (Session info: chrome=113.0.5672.127)
+Stacktrace:
+Backtrace:
+	GetHandleVerifier [0x01208893+48451]
+	(No symbol) [0x0119B8A1]
+	(No symbol) [0x010A5058]
+	(No symbol) [0x010D0467]
+	(No symbol) [0x010D069B]
+	(No symbol) [0x010FDD92]
+	(No symbol) [0x010EA304]
+	(No symbol) [0x010FC482]
+	(No symbol) [0x010EA0B6]
+	(No symbol) [0x010C7E08]
+	(No symbol) [0x010C8F2D]
+	GetHandleVerifier [0x01468E3A+2540266]
+	GetHandleVerifier [0x014A8959+2801161]
+	GetHandleVerifier [0x014A295C+2776588]
+	GetHandleVerifier [0x01292280+612144]
+	(No symbol) [0x011A4F6C]
+	(No symbol) [0x011A11D8]
+	(No symbol) [0x011A12BB]
+	(No symbol) [0x01194857]
+	BaseThreadInitThunk [0x75EE00C9+25]
+	RtlGetAppContainerNamedObjectPath [0x77E67B4E+286]
+	RtlGetAppContainerNamedObjectPath [0x77E67B1E+238]
+</p><p style="color:maroon;">Traceback (most recent call last):
+  File "C:\Users\User\PycharmProjects\pythonProject3\pythonProjectAsos\unittest_proiectFinal\add_to_cart_test.py", line 43, in test8_remove_from_cart
+    self.driver.find_element(*Locators.REMOVE_CART).click()
+    ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\User\PycharmProjects\pythonProject3\pythonProjectAsos\venv\Lib\site-packages\selenium\webdriver\remote\webdriver.py", line 831, in find_element
+    return self.execute(Command.FIND_ELEMENT, {"using": by, "value": value})["value"]
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\User\PycharmProjects\pythonProject3\pythonProjectAsos\venv\Lib\site-packages\selenium\webdriver\remote\webdriver.py", line 440, in execute
+    self.error_handler.check_response(response)
+  File "C:\Users\User\PycharmProjects\pythonProject3\pythonProjectAsos\venv\Lib\site-packages\selenium\webdriver\remote\errorhandler.py", line 245, in check_response
+    raise exception_class(message, screen, stacktrace)
+selenium.common.exceptions.NoSuchElementException: Message: no such element: Unable to locate element: {"method":"xpath","selector":"//*[@id="asos-web-bag-react"]/div[1]/div[2]/div[1]/div[1]/div[3]/ul/li/bag-item-list/ul/li/div/div/div/bag-remove/div/button"}
+  (Session info: chrome=113.0.5672.127)
+Stacktrace:
+Backtrace:
+	GetHandleVerifier [0x01208893+48451]
+	(No symbol) [0x0119B8A1]
+	(No symbol) [0x010A5058]
+	(No symbol) [0x010D0467]
+	(No symbol) [0x010D069B]
+	(No symbol) [0x010FDD92]
+	(No symbol) [0x010EA304]
+	(No symbol) [0x010FC482]
+	(No symbol) [0x010EA0B6]
+	(No symbol) [0x010C7E08]
+	(No symbol) [0x010C8F2D]
+	GetHandleVerifier [0x01468E3A+2540266]
+	GetHandleVerifier [0x014A8959+2801161]
+	GetHandleVerifier [0x014A295C+2776588]
+	GetHandleVerifier [0x01292280+612144]
+	(No symbol) [0x011A4F6C]
+	(No symbol) [0x011A11D8]
+	(No symbol) [0x011A12BB]
+	(No symbol) [0x01194857]
+	BaseThreadInitThunk [0x75EE00C9+25]
+	RtlGetAppContainerNamedObjectPath [0x77E67B4E+286]
+	RtlGetAppContainerNamedObjectPath [0x77E67B1E+238]
+
+</p>
+                            </td>
+                        </tr>
+                        <tr class='success'>
+                            <td class="col-xs-10">test9_view_wishlist</td>
+                            <td class="col-xs-1">
+                                <span class="label label-success" style="display:block;width:40px;">Pass</span>
+                            </td>
+                            <td class="col-xs-1">
+                            </td>
+                        </tr>
+                        <tr>
+                            <td colspan="3">
+                                Total: 3, Pass: 2, Error: 1 -- Duration: 130.12 s
+                            </td>
+                        </tr>
+                    </tbody>
+                </table>
+            </div>
+        </div>
+        <div class="row">
+            <div class="col-xs-12 col-sm-10 col-md-10">
+                <table class='table table-hover table-responsive'>
+                    <thead>
+                        <tr>
+                            <th>unittest_proiectFinal.login_tests.TestLoginPage</th>
+                            <th>Status</th>
+                            <th></th>
+                        </tr>
+                    </thead>
+                    <tbody>
+                        <tr class='warning'>
+                            <td class="col-xs-10">test5_login</td>
+                            <td class="col-xs-1">
+                                <span class="label label-warning" style="display:block;width:40px;">Error</span>
+                            </td>
+                            <td class="col-xs-1">
+                                <button class="btn btn-default btn-xs">View</button>
+                            </td>
+                        </tr>
+                        <tr style="display:none;">
+                            <td class="col-xs-9" colspan="3"><p style="color:maroon;">ElementNotInteractableException: Message: element not interactable
+  (Session info: chrome=113.0.5672.127)
+Stacktrace:
+Backtrace:
+	GetHandleVerifier [0x01208893+48451]
+	(No symbol) [0x0119B8A1]
+	(No symbol) [0x010A4F20]
+	(No symbol) [0x010D13A6]
+	(No symbol) [0x010C9AAC]
+	(No symbol) [0x010EA2BC]
+	(No symbol) [0x010C9586]
+	(No symbol) [0x010EA614]
+	(No symbol) [0x010FC482]
+	(No symbol) [0x010EA0B6]
+	(No symbol) [0x010C7E08]
+	(No symbol) [0x010C8F2D]
+	GetHandleVerifier [0x01468E3A+2540266]
+	GetHandleVerifier [0x014A8959+2801161]
+	GetHandleVerifier [0x014A295C+2776588]
+	GetHandleVerifier [0x01292280+612144]
+	(No symbol) [0x011A4F6C]
+	(No symbol) [0x011A11D8]
+	(No symbol) [0x011A12BB]
+	(No symbol) [0x01194857]
+	BaseThreadInitThunk [0x75EE00C9+25]
+	RtlGetAppContainerNamedObjectPath [0x77E67B4E+286]
+	RtlGetAppContainerNamedObjectPath [0x77E67B1E+238]
+</p><p style="color:maroon;">Traceback (most recent call last):
+  File "C:\Users\User\PycharmProjects\pythonProject3\pythonProjectAsos\unittest_proiectFinal\login_tests.py", line 25, in test5_login
+    self.driver.find_element(*Locators.SIGN_IN_ACC).click()
+  File "C:\Users\User\PycharmProjects\pythonProject3\pythonProjectAsos\venv\Lib\site-packages\selenium\webdriver\remote\webelement.py", line 94, in click
+    self._execute(Command.CLICK_ELEMENT)
+  File "C:\Users\User\PycharmProjects\pythonProject3\pythonProjectAsos\venv\Lib\site-packages\selenium\webdriver\remote\webelement.py", line 403, in _execute
+    return self._parent.execute(command, params)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\User\PycharmProjects\pythonProject3\pythonProjectAsos\venv\Lib\site-packages\selenium\webdriver\remote\webdriver.py", line 440, in execute
+    self.error_handler.check_response(response)
+  File "C:\Users\User\PycharmProjects\pythonProject3\pythonProjectAsos\venv\Lib\site-packages\selenium\webdriver\remote\errorhandler.py", line 245, in check_response
+    raise exception_class(message, screen, stacktrace)
+selenium.common.exceptions.ElementNotInteractableException: Message: element not interactable
+  (Session info: chrome=113.0.5672.127)
+Stacktrace:
+Backtrace:
+	GetHandleVerifier [0x01208893+48451]
+	(No symbol) [0x0119B8A1]
+	(No symbol) [0x010A4F20]
+	(No symbol) [0x010D13A6]
+	(No symbol) [0x010C9AAC]
+	(No symbol) [0x010EA2BC]
+	(No symbol) [0x010C9586]
+	(No symbol) [0x010EA614]
+	(No symbol) [0x010FC482]
+	(No symbol) [0x010EA0B6]
+	(No symbol) [0x010C7E08]
+	(No symbol) [0x010C8F2D]
+	GetHandleVerifier [0x01468E3A+2540266]
+	GetHandleVerifier [0x014A8959+2801161]
+	GetHandleVerifier [0x014A295C+2776588]
+	GetHandleVerifier [0x01292280+612144]
+	(No symbol) [0x011A4F6C]
+	(No symbol) [0x011A11D8]
+	(No symbol) [0x011A12BB]
+	(No symbol) [0x01194857]
+	BaseThreadInitThunk [0x75EE00C9+25]
+	RtlGetAppContainerNamedObjectPath [0x77E67B4E+286]
+	RtlGetAppContainerNamedObjectPath [0x77E67B1E+238]
+
+</p>
+                            </td>
+                        </tr>
+                        <tr class='warning'>
+                            <td class="col-xs-10">test6_invalid_login</td>
+                            <td class="col-xs-1">
+                                <span class="label label-warning" style="display:block;width:40px;">Error</span>
+                            </td>
+                            <td class="col-xs-1">
+                                <button class="btn btn-default btn-xs">View</button>
+                            </td>
+                        </tr>
+                        <tr style="display:none;">
+                            <td class="col-xs-9" colspan="3"><p style="color:maroon;">ElementNotInteractableException: Message: element not interactable
+  (Session info: chrome=113.0.5672.127)
+Stacktrace:
+Backtrace:
+	GetHandleVerifier [0x01208893+48451]
+	(No symbol) [0x0119B8A1]
+	(No symbol) [0x010A4F20]
+	(No symbol) [0x010CCB96]
+	(No symbol) [0x010CC401]
+	(No symbol) [0x010EA2BC]
+	(No symbol) [0x010C9586]
+	(No symbol) [0x010EA614]
+	(No symbol) [0x010FC482]
+	(No symbol) [0x010EA0B6]
+	(No symbol) [0x010C7E08]
+	(No symbol) [0x010C8F2D]
+	GetHandleVerifier [0x01468E3A+2540266]
+	GetHandleVerifier [0x014A8959+2801161]
+	GetHandleVerifier [0x014A295C+2776588]
+	GetHandleVerifier [0x01292280+612144]
+	(No symbol) [0x011A4F6C]
+	(No symbol) [0x011A11D8]
+	(No symbol) [0x011A12BB]
+	(No symbol) [0x01194857]
+	BaseThreadInitThunk [0x75EE00C9+25]
+	RtlGetAppContainerNamedObjectPath [0x77E67B4E+286]
+	RtlGetAppContainerNamedObjectPath [0x77E67B1E+238]
+</p><p style="color:maroon;">Traceback (most recent call last):
+  File "C:\Users\User\PycharmProjects\pythonProject3\pythonProjectAsos\unittest_proiectFinal\login_tests.py", line 46, in test6_invalid_login
+    email.send_keys("sem.gula@gmail.com")
+  File "C:\Users\User\PycharmProjects\pythonProject3\pythonProjectAsos\venv\Lib\site-packages\selenium\webdriver\remote\webelement.py", line 231, in send_keys
+    self._execute(
+  File "C:\Users\User\PycharmProjects\pythonProject3\pythonProjectAsos\venv\Lib\site-packages\selenium\webdriver\remote\webelement.py", line 403, in _execute
+    return self._parent.execute(command, params)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\User\PycharmProjects\pythonProject3\pythonProjectAsos\venv\Lib\site-packages\selenium\webdriver\remote\webdriver.py", line 440, in execute
+    self.error_handler.check_response(response)
+  File "C:\Users\User\PycharmProjects\pythonProject3\pythonProjectAsos\venv\Lib\site-packages\selenium\webdriver\remote\errorhandler.py", line 245, in check_response
+    raise exception_class(message, screen, stacktrace)
+selenium.common.exceptions.ElementNotInteractableException: Message: element not interactable
+  (Session info: chrome=113.0.5672.127)
+Stacktrace:
+Backtrace:
+	GetHandleVerifier [0x01208893+48451]
+	(No symbol) [0x0119B8A1]
+	(No symbol) [0x010A4F20]
+	(No symbol) [0x010CCB96]
+	(No symbol) [0x010CC401]
+	(No symbol) [0x010EA2BC]
+	(No symbol) [0x010C9586]
+	(No symbol) [0x010EA614]
+	(No symbol) [0x010FC482]
+	(No symbol) [0x010EA0B6]
+	(No symbol) [0x010C7E08]
+	(No symbol) [0x010C8F2D]
+	GetHandleVerifier [0x01468E3A+2540266]
+	GetHandleVerifier [0x014A8959+2801161]
+	GetHandleVerifier [0x014A295C+2776588]
+	GetHandleVerifier [0x01292280+612144]
+	(No symbol) [0x011A4F6C]
+	(No symbol) [0x011A11D8]
+	(No symbol) [0x011A12BB]
+	(No symbol) [0x01194857]
+	BaseThreadInitThunk [0x75EE00C9+25]
+	RtlGetAppContainerNamedObjectPath [0x77E67B4E+286]
+	RtlGetAppContainerNamedObjectPath [0x77E67B1E+238]
+
+</p>
+                            </td>
+                        </tr>
+                        <tr>
+                            <td colspan="3">
+                                Total: 2, Pass: 0, Error: 2 -- Duration: 60.58 s
+                            </td>
+                        </tr>
+                    </tbody>
+                </table>
+            </div>
+        </div>
+        <div class="row">
+            <div class="col-xs-12 col-sm-10 col-md-10">
+                <table class='table table-hover table-responsive'>
+                    <thead>
+                        <tr>
+                            <th>unittest_proiectFinal.cautare_prod_test.TestCautareProduse</th>
+                            <th>Status</th>
+                            <th></th>
+                        </tr>
+                    </thead>
+                    <tbody>
+                        <tr class='warning'>
+                            <td class="col-xs-10">test3_search_functionality</td>
+                            <td class="col-xs-1">
+                                <span class="label label-warning" style="display:block;width:40px;">Error</span>
+                            </td>
+                            <td class="col-xs-1">
+                                <button class="btn btn-default btn-xs">View</button>
+                            </td>
+                        </tr>
+                        <tr style="display:none;">
+                            <td class="col-xs-9" colspan="3"><p style="color:maroon;">TimeoutException: Message: 
+</p><p style="color:maroon;">Traceback (most recent call last):
+  File "C:\Users\User\PycharmProjects\pythonProject3\pythonProjectAsos\unittest_proiectFinal\cautare_prod_test.py", line 27, in test3_search_functionality
+    lista = wait.until(EC.visibility_of_all_elements_located(Locators.LISTA_DRESSES))
+            ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\User\PycharmProjects\pythonProject3\pythonProjectAsos\venv\Lib\site-packages\selenium\webdriver\support\wait.py", line 95, in until
+    raise TimeoutException(message, screen, stacktrace)
+selenium.common.exceptions.TimeoutException: Message: 
+
+</p>
+                            </td>
+                        </tr>
+                        <tr class='warning'>
+                            <td class="col-xs-10">test4_invalid_search_functionality</td>
+                            <td class="col-xs-1">
+                                <span class="label label-warning" style="display:block;width:40px;">Error</span>
+                            </td>
+                            <td class="col-xs-1">
+                                <button class="btn btn-default btn-xs">View</button>
+                            </td>
+                        </tr>
+                        <tr style="display:none;">
+                            <td class="col-xs-9" colspan="3"><p style="color:maroon;">NoSuchElementException: Message: no such element: Unable to locate element: {"method":"xpath","selector":"//span[@id='Password-error']"}
+  (Session info: chrome=113.0.5672.127)
+Stacktrace:
+Backtrace:
+	GetHandleVerifier [0x01208893+48451]
+	(No symbol) [0x0119B8A1]
+	(No symbol) [0x010A5058]
+	(No symbol) [0x010D0467]
+	(No symbol) [0x010D069B]
+	(No symbol) [0x010FDD92]
+	(No symbol) [0x010EA304]
+	(No symbol) [0x010FC482]
+	(No symbol) [0x010EA0B6]
+	(No symbol) [0x010C7E08]
+	(No symbol) [0x010C8F2D]
+	GetHandleVerifier [0x01468E3A+2540266]
+	GetHandleVerifier [0x014A8959+2801161]
+	GetHandleVerifier [0x014A295C+2776588]
+	GetHandleVerifier [0x01292280+612144]
+	(No symbol) [0x011A4F6C]
+	(No symbol) [0x011A11D8]
+	(No symbol) [0x011A12BB]
+	(No symbol) [0x01194857]
+	BaseThreadInitThunk [0x75EE00C9+25]
+	RtlGetAppContainerNamedObjectPath [0x77E67B4E+286]
+	RtlGetAppContainerNamedObjectPath [0x77E67B1E+238]
+</p><p style="color:maroon;">Traceback (most recent call last):
+  File "C:\Users\User\PycharmProjects\pythonProject3\pythonProjectAsos\unittest_proiectFinal\cautare_prod_test.py", line 35, in test4_invalid_search_functionality
+    actual_result = self.driver.find_element(*Locators.MSG_ERROR)
+                    ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\User\PycharmProjects\pythonProject3\pythonProjectAsos\venv\Lib\site-packages\selenium\webdriver\remote\webdriver.py", line 831, in find_element
+    return self.execute(Command.FIND_ELEMENT, {"using": by, "value": value})["value"]
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\User\PycharmProjects\pythonProject3\pythonProjectAsos\venv\Lib\site-packages\selenium\webdriver\remote\webdriver.py", line 440, in execute
+    self.error_handler.check_response(response)
+  File "C:\Users\User\PycharmProjects\pythonProject3\pythonProjectAsos\venv\Lib\site-packages\selenium\webdriver\remote\errorhandler.py", line 245, in check_response
+    raise exception_class(message, screen, stacktrace)
+selenium.common.exceptions.NoSuchElementException: Message: no such element: Unable to locate element: {"method":"xpath","selector":"//span[@id='Password-error']"}
+  (Session info: chrome=113.0.5672.127)
+Stacktrace:
+Backtrace:
+	GetHandleVerifier [0x01208893+48451]
+	(No symbol) [0x0119B8A1]
+	(No symbol) [0x010A5058]
+	(No symbol) [0x010D0467]
+	(No symbol) [0x010D069B]
+	(No symbol) [0x010FDD92]
+	(No symbol) [0x010EA304]
+	(No symbol) [0x010FC482]
+	(No symbol) [0x010EA0B6]
+	(No symbol) [0x010C7E08]
+	(No symbol) [0x010C8F2D]
+	GetHandleVerifier [0x01468E3A+2540266]
+	GetHandleVerifier [0x014A8959+2801161]
+	GetHandleVerifier [0x014A295C+2776588]
+	GetHandleVerifier [0x01292280+612144]
+	(No symbol) [0x011A4F6C]
+	(No symbol) [0x011A11D8]
+	(No symbol) [0x011A12BB]
+	(No symbol) [0x01194857]
+	BaseThreadInitThunk [0x75EE00C9+25]
+	RtlGetAppContainerNamedObjectPath [0x77E67B4E+286]
+	RtlGetAppContainerNamedObjectPath [0x77E67B1E+238]
+
+</p>
+                            </td>
+                        </tr>
+                        <tr>
+                            <td colspan="3">
+                                Total: 2, Pass: 0, Error: 2 -- Duration: 101.72 s
+                            </td>
+                        </tr>
+                    </tbody>
+                </table>
+            </div>
+        </div>
+    </div>
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/2.2.4/jquery.min.js"></script>
+    <script type="text/javascript">
+        $(document).ready(function(){
+            $('td').on('click', '.btn', function(e){
+                e.preventDefault();
+                e.stopImmediatePropagation();
+                var $this = $(this);
+                var $nextRow = $this.closest('tr').next('tr');
+                $nextRow.slideToggle("fast");
+                $this.text(function(i, text){
+                    if (text === 'View') {
+                        return 'Hide';
+                    } else {
+                        return 'View';
+                    };
+                });
+            });
+        });
+    </script>
+</body>
+</html
